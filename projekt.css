@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+
+}
+
+html, body{
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  background: black;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+header{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#logo{
+  height: 75px;
+  margin-left: 15px;
+}
+
+#sc-icon{
+  width: 50px;
+  }
+
+#fb-icon{
+  width: 50px;
+  margin: 10px 0;
+  }
+
+#yt-icon{
+  width: 50px;
+  }
+
+#menu {
+  margin-left: 15px;
+}
+
+nav a, footer a{
+  text-transform: uppercase;
+  transition: 1s all ease;
+}
+
+footer a {
+  font-size: .5rem;
+}
+
+nav a:hover, footer a:hover{
+  color: rgb(205, 207, 210);
+}
+
+#title{
+display: block;
+width:100%;
+}
+
+.social li{
+  margin: 0 1rem;
+}
+
+.footermenu li{
+  margin: 0 2rem;
+}
+
+footer .social{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100px;
+  }
+
+  footer .footermenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    }
+
+    #menu{
+      float: right;
+      display: block;
+      margin-right: 15px;
+    }
+
+@media (min-width: 768px){
+
+  header{
+    margin-bottom: 20px;
+  }
+
+  #menu{
+    margin-top: 85px;
+  }
+
+  #menu li{
+    float: left;
+    margin-right: 40px;
+      }
+
+  #menu li:last-child{
+    margin-right: 100px;
+  }
+
+  #logo{
+    height: 125px;
+  }
+
+  nav a{
+    font-size: 1.5rem;
+  }
+
+  footer a{
+    font-size: 1rem;
+  }
+
+  #title{
+    width: 100%;
+  }
+
+
+.footermenu li{
+  margin: 0 4rem;
+}
+
+  .social li{
+    margin: 0 2rem;
+  }
+
+  #sc-icon{
+    width: 100px;
+    }
+
+  #fb-icon{
+    width: 100px;
+    margin: 10px 0;
+    }
+
+  #yt-icon{
+    width: 100px;
+    }
+
+}
