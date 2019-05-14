@@ -1,0 +1,292 @@
+html, body {
+  margin: 0;
+  text-align: center;
+  overscroll-behavior: none;
+  font-family: 'Thasadith', sans-serif;
+  background-color: #001127;
+  color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2em;
+  font-variant:small-caps;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-transform: capitalize
+}
+
+img {
+  max-width: 100%;
+}
+
+#designs img {
+  display: block;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 0.5s all ease;
+  }
+
+a:hover {
+  color: #85d0eb;
+}
+
+.project-tile:hover {
+  background-color: whitesmoke;
+  color: #001127;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
+  #navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  }
+
+nav {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  background-color: #001127;
+}
+
+#welcome-section {
+  height: 55vh;
+  padding-top: 45vh;
+  background-image: url(https://s3.eu-central-1.amazonaws.com/leas-bucket-1/project-final.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: content-box;
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.project-image {
+  width: 90%;
+}
+
+.project-tile {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  margin: 20px 0;
+  padding: 3% 0;
+  font-weight: bold;
+}
+
+.project-tile p {
+  margin: 5px;
+}
+
+.white-border {
+  border: 1px whitesmoke solid;
+  border-radius: 3px;
+}
+
+.design-image {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.profile-pic {
+  width: 100px;
+  border: 2px white solid;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+#about p {
+  font-size: 1.1em;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#links ul {
+  width: 80%;
+  margin: 20px auto 40px;
+  padding-left: 25%;
+}
+
+#footer a {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+#footer {
+  height: 60px;
+  background-color: black;
+  border-top: 0.2px white solid;
+  padding: 9px 0;
+}
+
+#footer p {
+  margin: auto;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.column li {
+  margin-bottom: 10px;
+}
+
+.fa-arrow-circle-down {
+  font-size: 1.5em;
+}
+
+@media (min-width: 768px) {
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background-color: #001127;
+  }
+  
+  #navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+  }
+
+  #navbar li {
+    margin-right: 30px;
+  }
+
+  #navbar a {
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  .section-grid {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
+
+  .project-tile {
+    width: 300px;
+  }
+
+  .end {
+    justify-self: end;
+  }
+
+  .design-image {
+    width: 70%;
+  }
+
+  #about p {
+    font-size: 1.25em;
+  }
+
+  .profile-pic {
+    width: 125px;
+  }
+
+  #links ul {
+    padding-left: 45%;
+    margin: 40px 0;
+  }
+
+}
+
+@media (min-width: 960px) {
+  
+  .section-grid {
+    grid-column-gap: 100px;
+  }
+
+  .project-tile {
+    width: 350px;
+  }
+
+  .desktop-grid {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+  }
+
+  .design-image {
+    display: inline-block;
+    width: 350px;
+    max-width: initial;
+    height: auto;
+    margin: 20px 0;
+    font-weight: bold;
+    transition: 1s all ease;
+  }
+
+  .design-image:hover {
+    transform: scale(1.3);
+  }
+
+  .end {
+    justify-self: end;
+  }
+
+  .center {
+    align-self: center;
+  }
+
+  #contact {
+    min-height: 700px;
+    padding-top: 20px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: auto;
+    padding-top: 5%;
+    max-width: 80%;
+  }
+
+  #links ul {
+    width: 80%;
+    margin: auto;
+    padding-left: 5%;
+  }
+
+  .column li {
+    margin-bottom: 30px;
+    font-size: larger;
+  }
+
+}
